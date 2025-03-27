@@ -1,0 +1,61 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0.5rem;
+    height: 100%;
+    width: 2px;
+    background-color: #6b7280; /* Cor da linha da timeline */
+}
+.timeline-event {
+    margin-bottom: 2rem;
+    position: relative;
+}
+.timeline-event-date {
+    position: absolute;
+    left: -6rem;
+    top: 0;
+    color: #9ca3af; /* Cor da data */
+    font-weight: 600;
+}
+.timeline-event-content {
+    background-color: #374151; /* Cor do fundo do evento */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    margin-left: 1rem;
+    position: relative;
+}
+.timeline-event-content::before {
+    content: '';
+    position: absolute;
+    left: -0.75rem;
+    top: 1rem;
+    border-top: 0.5rem solid transparent;
+    border-right: 0.75rem solid #374151; /* Cor da seta */
+    border-bottom: 0.5rem solid transparent;
+}
+.timeline-event-title {
+    color: #ffffff; /* Cor do título do evento */
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.timeline-event-description {
+    color: #d1d5db; /* Cor da descrição do evento */
+    line-height: 1.75;
+}

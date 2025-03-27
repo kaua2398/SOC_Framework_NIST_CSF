@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requisitos de Zabbix e Nagios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="imagem/soc_icon.png" type="image/png">
+    <link rel="stylesheet" href="css/ferramentas.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-gray-950 py-4 border-b border-gray-800">
+        <div class="container flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Requisitos de Zabbix e Nagios</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="hover:text-gray-300 transition duration-300">SOC Framework NIST CSF</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container py-8">
+        <section>
+            <h2 class="section-title">Requisitos de Sistema para Zabbix e Nagios</h2>
+            <p class="text-gray-400 text-lg mb-8">
+                Esta página fornece um resumo dos requisitos de sistema para as ferramentas de monitoramento Zabbix e Nagios.
+                Use estas informações para planejar sua instalação e garantir que seu ambiente atenda às necessidades de cada ferramenta.
+            </p>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="tool-title">Zabbix</h2>
+            <p class="text-gray-400 text-lg mb-4">
+                Zabbix é uma solução de monitoramento de nível empresarial de código aberto para monitorar a disponibilidade e o desempenho de aplicações,
+                serviços, servidores e hardware de rede.
+            </p>
+
+            <h3 class="requirement-title">Requisitos de Hardware</h3>
+            <ul class="list-disc list-inside text-gray-400">
+                <li>Servidor: Mínimo de 2 cores de CPU, 2GB de RAM, 20GB de espaço em disco</li>
+                <li>Proxy: Mínimo de 1 core de CPU, 512MB de RAM, 10GB de espaço em disco</li>
+                <li>Agente: Requisitos mínimos, depende dos itens monitorados</li>
+            </ul>
+            <p class="requirement-description">
+                Os requisitos de hardware podem variar dependendo do número de dispositivos e métricas monitoradas.
+                Para ambientes maiores, mais recursos de CPU, RAM e disco são recomendados.
+            </p>
+
+            <h3 class="requirement-title">Requisitos de Software</h3>
+            <ul class="list-disc list-inside text-gray-400">
+                <li>Sistema Operacional: Linux (CentOS, Debian, Ubuntu), Windows Server</li>
+                <li>Banco de Dados: MySQL, PostgreSQL, Oracle, SQLite, IBM DB2</li>
+                <li>Servidor Web: Apache, Nginx</li>
+                <li>PHP: Versão 7.2 ou superior (para a interface web)</li>
+            </ul>
+            <p class="requirement-description">
+                Zabbix Server requer um banco de dados para armazenar dados de configuração e monitoramento.
+                A interface web é opcional, mas recomendada para configuração e visualização de dados.
+            </p>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="tool-title">Nagios</h2>
+            <p class="text-gray-400 text-lg mb-4">
+                Nagios é um sistema de monitoramento de rede amplamente utilizado para monitorar serviços, sistemas e processos.
+                Ele alerta os usuários sobre condições críticas e erros, ajudando-os a minimizar interrupções e perdas.
+            </p>
+
+            <h3 class="requirement-title">Requisitos de Hardware</h3>
+            <ul class="list-disc list-inside text-gray-400">
+                <li>Servidor: Mínimo de 1GHz CPU, 512MB RAM, 40GB de espaço em disco</li>
+                <li>Agente: Requisitos mínimos, depende dos checks monitorados</li>
+            </ul>
+            <p class="requirement-description">
+                Os requisitos de hardware do Nagios podem aumentar com o número de hosts e serviços monitorados,
+                a frequência dos checks e os métodos de notificação configurados.
+            </p>
+
+            <h3 class="requirement-title">Requisitos de Software</h3>
+            <ul class="list-disc list-inside text-gray-400">
+                <li>Sistema Operacional: Linux (RHEL, CentOS, Ubuntu), Unix</li>
+                <li>Servidor Web: Apache</li>
+                <li>PHP: Necessário para a interface web</li>
+                <li>Compilador C: Necessário para compilar plugins</li>
+            </ul>
+            <p class="requirement-description">
+                Nagios Core é o mecanismo de monitoramento, e a interface web (opcional) fornece uma interface para visualização
+                do status do monitoramento, configuração e relatórios.  Plugins são necessários para monitorar serviços específicos.
+            </p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-950 py-6 border-t border-gray-800">
+        <div class="container text-center text-gray-400">
+            © 2025 SOC Framework NIST CSF. Todos os direitos reservados.
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diretrizes do NIST - Cybersecurity Framework</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="imagem/soc_icon.png" type="image/png">
+    <link rel="stylesheet" href="css/nist.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-gray-950 py-4 border-b border-gray-800">
+        <div class="container flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Diretrizes do NIST - Cybersecurity Framework</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="hover:text-gray-300 transition duration-300">SOC Framework NIST CSF</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <nav class="bg-gray-800 py-4 border-b border-gray-700">
+        <div class="container">
+            <ul class="flex justify-center space-x-6">
+                <li><a href="#identificar" class="hover:text-gray-300 transition duration-300">Identificar</a></li>
+                <li><a href="#proteger" class="hover:text-gray-300 transition duration-300">Proteger</a></li>
+                <li><a href="#detectar" class="hover:text-gray-300 transition duration-300">Detectar</a></li>
+                <li><a href="#responder" class="hover:text-gray-300 transition duration-300">Responder</a></li>
+                <li><a href="#recuperar" class="hover:text-gray-300 transition duration-300">Recuperar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container py-8">
+        <section id="identificar" class="mb-16">
+            <h2 class="section-title">Identificar</h2>
+            <p class="function-description">
+                Desenvolver uma compreensão organizacional para gerenciar riscos de segurança cibernética para sistemas, ativos, dados e capacidades.
+            </p>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h3 class="function-title">Gerenciamento de Ativos</h3>
+                    <p class="function-description">
+                        Identificar e gerenciar os ativos físicos e de software dentro do escopo do ecossistema de negócios.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-400">
+                        <li>Inventário de hardware e software</li>
+                        <li>Classificação de ativos por criticidade</li>
+                        <li>Gerenciamento do ciclo de vida dos ativos</li>
+                    </ul>
+                    <h4 class="example-title">Exemplo Prático:</h4>
+                    <p class="example-description">
+                        Uma empresa realiza um inventário completo de todos os seus dispositivos, desde servidores e estações de trabalho até dispositivos móveis e IoT.
+                        Eles categorizam os ativos com base em sua importância para as operações da empresa e implementam um sistema para rastrear
+                        o ciclo de vida de cada ativo, desde a aquisição até o descarte seguro.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://placehold.co/600x400/EEE/31343C?text=Identificar" alt="Identificar" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <section id="proteger" class="mb-16">
+            <h2 class="section-title">Proteger</h2>
+            <p class="function-description">
+                Desenvolver e implementar as salvaguardas apropriadas para garantir a entrega de serviços essenciais de segurança cibernética.
+            </p>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <img src="https://placehold.co/600x400/EEE/31343C?text=Proteger" alt="Proteger" class="rounded-lg shadow-lg">
+                </div>
+                <div>
+                    <h3 class="function-title">Controle de Acesso</h3>
+                    <p class="function-description">
+                       Limitar o acesso a ativos de informação e recursos de rede.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-400">
+                        <li>Autenticação de usuários</li>
+                        <li>Autorização baseada em função</li>
+                        <li>Gerenciamento de privilégios</li>
+                    </ul>
+                    <h4 class="example-title">Exemplo Prático:</h4>
+                    <p class="example-description">
+                        Uma organização implementa autenticação de dois fatores para todos os funcionários e usa o princípio do menor privilégio
+                        para garantir que os usuários só tenham acesso aos recursos necessários para realizar suas funções. Eles também
+                        implementam políticas de senha robustas e realizam auditorias regulares de controle de acesso.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="detectar" class="mb-16">
+            <h2 class="section-title">Detectar</h2>
+            <p class="function-description">
+                Desenvolver e implementar atividades apropriadas para identificar a ocorrência de um evento de segurança cibernética.
+            </p>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h3 class="function-title">Monitoramento de Segurança</h3>
+                    <p class="function-description">
+                        Monitorar sistemas e redes em busca de atividades anormais ou suspeitas.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-400">
+                        <li>Sistemas de detecção de intrusão (IDS)</li>
+                        <li>Gerenciamento de informações e eventos de segurança (SIEM)</li>
+                        <li>Análise de logs</li>
+                    </ul>
+                    <h4 class="example-title">Exemplo Prático:</h4>
+                    <p class="example-description">
+                       Um SOC (Security Operations Center) monitora continuamente os logs de segurança, o tráfego de rede e os alertas do sistema
+                       em busca de indicadores de comprometimento. Eles usam um SIEM para correlacionar eventos de diferentes fontes e identificar
+                       possíveis incidentes de segurança em tempo real.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://placehold.co/600x400/EEE/31343C?text=Detectar" alt="Detectar" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <section id="responder" class="mb-16">
+            <h2 class="section-title">Responder</h2>
+            <p class="function-description">
+                Desenvolver e implementar atividades apropriadas para agir em relação a um incidente de segurança cibernética detectado.
+            </p>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <img src="https://placehold.co/600x400/EEE/31343C?text=Responder" alt="Responder" class="rounded-lg shadow-lg">
+                </div>
+                <div>
+                    <h3 class="function-title">Análise de Incidentes</h3>
+                    <p class="function-description">
+                       Investigar incidentes de segurança cibernética para entender seu escopo, impacto e causa raiz.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-400">
+                        <li>Triagem de incidentes</li>
+                        <li>Análise de causa raiz</li>
+                        <li>Documentação de incidentes</li>
+                    </ul>
+                    <h4 class="example-title">Exemplo Prático:</h4>
+                    <p class="example-description">
+                        Uma equipe de resposta a incidentes conduz uma análise forense de um servidor comprometido para determinar como o invasor
+                        obteve acesso, quais dados foram afetados e quais sistemas foram comprometidos. Eles documentam todas as etapas do
+                        processo de investigação e criam um relatório detalhado do incidente.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="recuperar" class="mb-16">
+            <h2 class="section-title">Recuperar</h2>
+            <p class="function-description">
+               Desenvolver e implementar atividades apropriadas para manter planos de resiliência e restaurar quaisquer capacidades ou serviços que foram prejudicados devido a um incidente de segurança cibernética.
+            </p>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h3 class="function-title">Planejamento de Recuperação</h3>
+                    <p class="function-description">
+                       Desenvolver e manter um plano para restaurar sistemas e dados após um incidente de segurança cibernética.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-400">
+                        <li>Planos de recuperação de desastres</li>
+                        <li>Backups e restauração de dados</li>
+                        <li>Comunicações de recuperação</li>
+                    </ul>
+                    <h4 class="example-title">Exemplo Prático:</h4>
+                    <p class="example-description">
+                        Uma organização desenvolve um plano de recuperação de desastres que descreve os procedimentos para restaurar seus sistemas
+                        críticos em caso de um ataque de ransomware. O plano inclui backups offsite, sistemas redundantes e um plano de
+                        comunicações para manter as partes interessadas informadas durante o processo de recuperação.
+                    </p>
+                </div>
+                 <div>
+                    <img src="https://placehold.co/600x400/EEE/31343C?text=Recuperar" alt="Recuperar" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-950 py-6 border-t border-gray-800">
+        <div class="container">
+            <h2 class="text-lg font-semibold mb-4">Referências e Materiais Adicionais</h2>
+            <ul class="list-disc list-inside text-gray-400">
+                <li><a href="https://www.nist.gov/cyberframework" target="_blank" class="text-blue-500 hover:underline">NIST Cybersecurity Framework</a></li>
+                <li><a href="https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11" target="_blank" class="text-blue-500 hover:underline">NIST Framework Version 1.1</a></li>
+                <li><a href="https://csrc.nist.gov/projects/cybersecurity-framework" target="_blank" class="text-blue-500 hover:underline">NIST CSRC - Cybersecurity Framework</a></li>
+            </ul>
+            <p class="text-center text-gray-400 mt-4">
+                © 2025 SOC Framework NIST CSF. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
