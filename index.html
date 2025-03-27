@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOC Framework NIST CSF</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="imagem/soc_icon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-gray-950 py-4 border-b border-gray-800">
+        <div class="container flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-white">
+                <img src="imagem/soc_icon.png" alt="Logo Clavis" class="h-20">
+            </a>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#sobre-nos" class="hover:text-gray-300 transition duration-300">Sobre Nós</a></li>
+                    <li><a href="#servicos" class="hover:text-gray-300 transition duration-300">Serviços</a></li>
+                    <li><a href="#contato" class="hover:text-gray-300 transition duration-300">Contato</a></li>
+                    <li><a href="linha-do-tempo.html" class="hover:text-gray-300 transition duration-300">Ataques cibernéticos pela História</a></li>
+                    <li><a href="diretrizes-nist.html" class="hover:text-gray-300 transition duration-300">Diretrizes NIST</a></li>
+                    <li><a href="ferramentas.html" class="hover:text-gray-300 transition duration-300">Framework</a></li>
+                    <li><a href="banco-de-dados.html" class="hover:text-gray-300 transition duration-300">Banco de Dados</a></li>
+                    <li><a href="equipe.html" class="hover:text-gray-300 transition duration-300">Equipe</a></li>
+                </ul>
+            </nav>
+            <button id="menu-button" class="md:hidden text-white focus:outline-none" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-50">
+        <div class="bg-gray-950 w-80 h-full absolute right-0 p-6">
+            <div class="flex justify-end mb-4">
+                <button id="close-menu-button" class="text-white focus:outline-none" aria-label="Close Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <nav class="block">
+                <ul class="space-y-4">
+                    <li><a href="#sobre-nos" class="block text-lg text-white hover:text-gray-300 transition duration-300">Sobre Nós</a></li>
+                    <li><a href="#servicos" class="block text-lg text-white hover:text-gray-300 transition duration-300">Serviços</a></li>
+                    <li><a href="#contato" class="block text-lg text-white hover:text-gray-300 transition duration-300">Contato</a></li>
+                    <li><a href="#carreiras" class="block text-lg text-white hover:text-gray-300 transition duration-300">Carreiras</a></li>
+                    <li><a href="#blog" class="block text-lg text-white hover:text-gray-300 transition duration-300">Blog</a></li>
+                    <li><a href="#materiais" class="block text-lg text-white hover:text-gray-300 transition duration-300">Materiais</a></li>
+                    <li><a href="#eventos" class="block text-lg text-white hover:text-gray-300 transition duration-300">Eventos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <section class="bg-gray-900 py-16 md:py-24">
+            <div class="container text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+                    Centralizamos Informações, Relatórios e Comunicações do seu SOC.
+                </h1>
+                <p class="text-gray-300 text-lg md:text-xl mb-8">
+                    Tenha uma visão unificada e eficiente de todas as atividades do seu Security Operations Center.
+                </p>
+                <a href="#servicos" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300">
+                    Conheça nossos serviços
+                </a>
+            </div>
+        </section>
+
+        <section id="sobre-nos" class="bg-gray-950 py-16 md:py-24 border-t border-gray-800">
+            <div class="container">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-semibold text-white mb-4">Sobre Nós</h2>
+                        <p class="text-gray-300 text-lg md:text-xl">
+                            Somos uma empresa especializada em soluções para Security Operations Center (SOC),
+                            focada em centralizar e otimizar a gestão de informações, relatórios e comunicações.
+                            Nossa missão é fornecer ferramentas e serviços que permitam às equipes de segurança
+                            operar de forma mais eficiente e proativa.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="https://clavis.com.br/wp-content/uploads/2023/10/equipe-soc.jpg" alt="Equipe SOC" class="rounded-lg shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="bg-gray-900 py-16 md:py-24 border-t border-gray-800">
+            <div class="container">
+                <h2 class="text-3xl md:text-4xl font-semibold text-white mb-8 text-center">Nossos Serviços</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300">
+                        <h3 class="text-2xl font-semibold text-white mb-4">Plataforma de Gestão de SOC</h3>
+                        <p class="text-gray-300 text-lg mb-4">
+                            Centralize e automatize seus processos de SOC com nossa plataforma completa.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-400">
+                            <li>Gestão de incidentes</li>
+                            <li>Relatórios personalizados</li>
+                            <li>Integração com ferramentas SIEM</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300">
+                        <h3 class="text-2xl font-semibold text-white mb-4">Consultoria Especializada</h3>
+                        <p class="text-gray-300 text-lg mb-4">
+                            Conte com nossa expertise para otimizar seu SOC e fortalecer sua postura de segurança.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-400">
+                            <li>Avaliação de maturidade</li>
+                            <li>Desenho de processos</li>
+                            <li>Treinamento personalizado</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300">
+                        <h3 class="text-2xl font-semibold text-white mb-4">Treinamentos e Workshops</h3>
+                        <p class="text-gray-300 text-lg mb-4">
+                            Capacite sua equipe com nossos programas de treinamento e workshops práticos.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-400">
+                            <li>Análise de incidentes</li>
+                            <li>Uso de ferramentas de SOC</li>
+                            <li>Simulações de ataques</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="bg-gray-950 py-16 md:py-24 border-t border-gray-800">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-semibold text-white mb-8 text-center">Entre em Contato</h2>
+                <div class="bg-gray-800 rounded-lg p-8 shadow-lg">
+                    <form id="contactForm" action="enviar_email.php" method="POST">
+                        <div class="mb-6">
+                            <label for="nome" class="block text-gray-200 text-sm font-bold mb-2">Nome</label>
+                            <input type="text" id="nome" name="nome" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-300 leading-tight focus:outline-none focus:shadow-outline bg-gray-700" placeholder="Seu Nome" required>
+                            <div id="nome-error" class="text-red-500 text-xs italic" style="display: none;"></div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-200 text-sm font-bold mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-300 leading-tight focus:outline-none focus:shadow-outline bg-gray-700" placeholder="Seu Email" required>
+                            <div id="email-error" class="text-red-500 text-xs italic" style="display: none;"></div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="mensagem" class="block text-gray-200 text-sm font-bold mb-2">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-300 leading-tight focus:outline-none focus:shadow-outline bg-gray-700 h-32 resize-y" placeholder="Sua Mensagem" required></textarea>
+                            <div id="mensagem-error" class="text-red-500 text-xs italic" style="display: none;"></div>
+                        </div>
+                        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300 focus:outline-none focus:shadow-outline">
+                            Enviar Mensagem
+                        </button>
+                        <div id="form-message" class="mt-4 text-center font-semibold"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-950 py-6 border-t border-gray-800">
+        <div class="container text-center text-gray-400">
+            © 2025 SOC Framework NIST CSF. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
