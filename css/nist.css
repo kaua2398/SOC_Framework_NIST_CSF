@@ -40,3 +40,26 @@ body {
     padding-left: 1rem;
     border-left: 2px solid #6b7280;
 }
+/* Estilos para tornar as seções responsivas */
+@media (max-width: 768px) { /* Em telas menores que 768px (tablets, por exemplo) */
+    .grid-md-2 {
+        grid-template-columns: 1fr; /* As colunas se empilham em uma única coluna */
+    }
+    .space-x-6 {
+        gap: 1rem; /* Reduz o espaço entre os itens do menu em telas menores */
+    }
+    .section-title{
+        font-size: 1.75rem; /* зменшили заголовок секції на мобільних пристроях */
+    }
+    .function-title{
+        font-size: 1.25rem; /* зменшили заголовок функції на мобільних пристроях */
+    }
+}
+@media (max-width: 480px){
+   .space-x-6{
+       display: flex;
+       flex-direction: column;
+       gap: 0;
+       gap: 0.5rem;
+   }
+}
