@@ -8,6 +8,7 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="icon" href="imagem/soc_icon.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body class="bg-gray-900 text-white">
     <header class="bg-gray-950 py-4 border-b border-gray-800">
@@ -35,8 +36,8 @@
         </div>
     </header>
 
-    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-50">
-        <div class="bg-gray-950 w-80 h-full absolute right-0 p-6">
+    <div id="mobile-menu" class="">
+        <div id="mobile-menu-content">
             <div class="flex justify-end mb-4">
                 <button id="close-menu-button" class="text-white focus:outline-none" aria-label="Close Menu">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -49,10 +50,11 @@
                     <li><a href="#sobre-nos" class="block text-lg text-white hover:text-gray-300 transition duration-300">Sobre Nós</a></li>
                     <li><a href="#servicos" class="block text-lg text-white hover:text-gray-300 transition duration-300">Serviços</a></li>
                     <li><a href="#contato" class="block text-lg text-white hover:text-gray-300 transition duration-300">Contato</a></li>
-                    <li><a href="#carreiras" class="block text-lg text-white hover:text-gray-300 transition duration-300">Carreiras</a></li>
-                    <li><a href="#blog" class="block text-lg text-white hover:text-gray-300 transition duration-300">Blog</a></li>
-                    <li><a href="#materiais" class="block text-lg text-white hover:text-gray-300 transition duration-300">Materiais</a></li>
-                    <li><a href="#eventos" class="block text-lg text-white hover:text-gray-300 transition duration-300">Eventos</a></li>
+                    <li><a href="linha-do-tempo.html" class="block text-lg text-white hover:text-gray-300 transition duration-300">Ataques cibernéticos pela História</a></li>
+                    <li><a href="diretrizes-nist.html" class="block text-lg text-white hover:text-gray-300 transition duration-300">Diretrizes NIST</a></li>
+                    <li><a href="ferramentas.html" class="block text-lg text-white hover:text-gray-300 transition duration-300">Framework</a></li>
+                    <li><a href="banco-de-dados.html" class="block text-lg text-white hover:text-gray-300 transition duration-duration-300">Banco de Dados</a></li>
+                     <li><a href="equipe.html" class="block text-lg text-white hover:text-gray-300 transition duration-300">Equipe</a></li>
                 </ul>
             </nav>
         </div>
@@ -168,5 +170,6 @@
             © 2025 SOC Framework NIST CSF. Todos os direitos reservados.
         </div>
     </footer>
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
+    </body>
 </html>
