@@ -1,0 +1,65 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.section-title {
+    color: #ffffff;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.function-title {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.function-description {
+    color: #d1d5db;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+.example-title {
+    color: #ffffff;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.example-description {
+    color: #d1d5db;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 2px solid #6b7280;
+}
+ /* Estilos para tornar as seções responsivas */
+@media (max-width: 768px) { /* Em telas menores que 768px (tablets, por exemplo) */
+    .grid-md-2 {
+        grid-template-columns: 1fr; /* As colunas se empilham em uma única coluna */
+    }
+    .space-x-6 {
+        gap: 1rem; /* Reduz o espaço entre os itens do menu em telas menores */
+    }
+    .section-title{
+        font-size: 1.75rem; /* зменшили заголовок секції на мобільних пристроях */
+    }
+    .function-title{
+        font-size: 1.25rem; /* зменшили заголовок функції на мобільних пристроях */
+    }
+}
+@media (max-width: 480px){
+   .space-x-6{
+       display: flex;
+       flex-direction: column;
+       gap: 0;
+       gap: 0.5rem;
+   }
+}
